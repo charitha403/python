@@ -1,0 +1,91 @@
+1,Work on assignment operators?
+
+a=10
+b=0
+c=60
+a+=c
+c-=b
+a*=a
+c/=c
+c//=a
+a%=2
+b+=10
+b<<=2
+b>>=4
+print(a,b,c)
+
+o/p:-0 2 0.0
+
+2,Work on comparsion operators?
+
+a=10
+b=10
+c=40
+if(a==b):
+    print("wow")
+    if(b>c):
+        print("awesome")
+        if(a<c):
+            print("sample")
+elif(a>=b):
+    print("both a and b may or may not equal")
+else:
+    print("somrthing")
+
+o/p:-wow
+
+3,Work on bitwise operators?
+
+a=2
+b=4
+print(a&b)
+print(a|b)
+print(a^b)
+print(~a)
+
+o/p:-
+0
+6
+6
+-3
+
+4,Work on tuple and dictionary?
+
+Tuple:-A tuple is though similar to a list but it is immutable. Another difference between a list and a tuple is tuples are heterogeneous 
+data structures whereas list is a homogeneous data atructures.
+
+Dictionary:-Dictionary is an associative array of key-value pairs.It is unordered and requires the keys to be hashable search operations 
+happen to be faster in adictionary as they use keys for lookups.                    
+
+5,Explanation on methods?
+
+seed():-It is used to generate random numbers.
+getstate():-It is used to capture the state and return the value generate with the current state.
+randint():-To give random outputs
+shuffle():-It is used to shuffle the elements in the list or any other data structure.
+choice():-It is used to return the random sequence element from the list or tuple.
+traingular:-It is used to return random floating number from two specified numbers.
+random():-It is used to give random results.
+
+6,Write a python program for prime logic wthout using loops?
+ 
+def prime(n,d):
+   if(n//2<d):
+       return true
+   if(n%d==0):
+       return false
+   return prime(n,d+1)
+
+def find_primes(n,i,result):
+    if(i==n+1):
+       return result
+    if(prime(i,2)):
+       result.append(i)
+    return find_primes(n,i+1,result)
+
+print(find_primes(100,2,[]))
+
+o/p:-[2,3,5,7,9,11,13,17,19,23,29,31,37,41,43,47,53,57,59,61,67,71,73,79,83,89,97]
+ 
+
+
